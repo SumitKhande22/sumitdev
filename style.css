@@ -103,6 +103,9 @@ h2{
     overflow: hidden;
     background: #1d1d25;
     color: #888894;
+
+    display: flex;
+    flex-direction: column;
 }
 .project-image{
     width: 100%;
@@ -118,21 +121,35 @@ h2{
 }
 .project-content{
     padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 .project-content h3{
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     font-size: 24px;
+    line-height: 1.2;
+    color: #ffffff;
 }
-.project-content p{
+.project-content >p:not(.tech){
+    color: #d0d0d8;
     margin-bottom: 15px;
 }
 .tech{
     font-size: 14px;
-    opacity: 0.65;
+    color: #888894;
+    margin-bottom: 0;
 }
 .project-content a{
     display: inline-block;
     margin-top: 10px;
+    font-weight: 600;
+    
+    margin-top: auto;
+    padding-top: 15px;
+}
+.project-content a:hover{
+    opacity: 0.7;
 }
 .skills-list{
     display: flex;
